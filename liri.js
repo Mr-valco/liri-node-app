@@ -44,7 +44,22 @@ const getConcert = function(input){
 //spotify-this-song
 //information about the song in your terminal
 const getSong = function(input){
-   
+    if(!input){
+        input = "What's My Age Again"
+    }
+
+    spotify.search({type: 'track', query: input }, function (err, data) {
+
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+
+        console.log('\r\n __BISCUITS_YES_BISCUITS__ \r\n\n' 
+        + 'Artist: ' + data.tracks.items[0].artists[0].name + '\r\n' 
+        + 'Song Name: ' + data.tracks.items[0].name + '\r\n' 
+        + 'Preview link: ' + data.tracks.items[0].preview_url + '\r\n' 
+        + 'album: ' + data.tracks.items[0].album.name + '\r\n\n end.. \r\n');
+    });
 }
 
 //movie-this
