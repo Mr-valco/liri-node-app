@@ -9,7 +9,9 @@ const request = require('request');
 let keys = require('./keys.js');
 let spotify = new Spotify(keys.spotify);
 
+
 //set arguments
+//let concertInfo='';
 let firstArg = process.argv[2];
 let secondArg = process.argv.slice(3).join(' ');
 
@@ -29,11 +31,18 @@ const getConcert = function(input){
 
             parsedData.forEach(function (e) {
 
-                console.log('\r\n ____VM____ \r\n\n' 
+              let concertInfo = '\r\n ____VM____ \r\n\n' 
                 + 'Artist: ' + e.lineup[0] + '\r\n'
                 + 'Venue: ' + e.venue.name + '\r\n'
                 + 'Venue Location: ' + e.venue.city + '\r\n' 
-                + 'Event Date: ' + e.datetime + '\r\n\n end.. \r\n');
+                + 'Event Date: ' + e.datetime + '\r\n\n end.. \r\n';
+                
+                console.log(concertInfo);
+
+                // Append the command and response to the log file
+	            fs.appendFile('./log.txt', 'User Command: ' + firstArg +' '+ secondArg +'\n\n LIRI Response:\n' + concertInfo + '\n', (err) => {
+		        if (err) {console.log(err);}
+	            });
 
             }, this);
         }
@@ -47,18 +56,25 @@ const getSong = function(input){
     if(!input){
         input = "What's My Age Again"
     }
-console.log(input);
+
     spotify.search({type: 'track', query: input }, function (err, data) {
 
         if (err) {
             return console.log('Error occurred: ' + err);
         }
 
-        console.log('\r\n __BISCUITS_YES_BISCUITS__ \r\n\n' 
+        let songInfo = '\r\n __BISCUITS_YES_BISCUITS__ \r\n\n' 
         + 'Artist: ' + data.tracks.items[0].artists[0].name + '\r\n' 
         + 'Song Name: ' + data.tracks.items[0].name + '\r\n' 
         + 'Preview link: ' + data.tracks.items[0].preview_url + '\r\n' 
-        + 'album: ' + data.tracks.items[0].album.name + '\r\n\n end.. \r\n');
+        + 'album: ' + data.tracks.items[0].album.name + '\r\n\n end.. \r\n';
+
+        console.log(songInfo);
+
+        // Append the command and response to the log file
+        fs.appendFile('./log.txt', 'User Command: ' + firstArg +' '+ secondArg +'\n\n LIRI Response:\n' + songInfo + '\n', (err) => {
+        if (err) {console.log(err);}
+        });
     });
 }
 
@@ -79,7 +95,7 @@ const getMovie = function(input){
         
             var parsedData = JSON.parse(body);
         
-            console.log('\r\n __BISCUITS_YES_BISCUITS__ \r\n\n' 
+            let movieInfo = '\r\n __BISCUITS_YES_BISCUITS__ \r\n\n' 
             + 'Title: ' + parsedData.Title + '\r\n' 
             + 'Year: ' + parsedData.Year + '\r\n'
             + 'IMDB Rating: ' + parsedData.imdbRating + '\r\n' 
@@ -87,7 +103,15 @@ const getMovie = function(input){
             + 'Country: ' + parsedData.Country + '\r\n'
             + 'Language: ' + parsedData.Language + '\r\n'
             + 'Plot: ' + parsedData.Plot + '\r\n'
-            + 'Actors: ' + parsedData.Actors + '\r\n\n end.. \r\n');
+            + 'Actors: ' + parsedData.Actors + '\r\n\n end.. \r\n';
+        
+            console.log(movieInfo);
+
+            // Append the command and response to the log file
+            fs.appendFile('./log.txt', 'User Command: ' + firstArg +' '+ secondArg +'\n\n LIRI Response:\n' + movieInfo + '\n', (err) => {
+                if (err) {console.log(err);}
+            });    
+        
         }
     });
 
@@ -137,9 +161,3 @@ switch (firstArg){
 
 }
 
-
-
-//Challenge
-// In addition to logging the data to your terminal/bash window, output the data to a .txt file called log.txt.
-// Make sure you append each command you run to the log.txt file. 
-// Do not overwrite your file each time you run a command.

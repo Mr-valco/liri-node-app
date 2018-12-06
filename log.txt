@@ -1,0 +1,231 @@
+User Command: do-what-it-says 
+
+ LIRI Response:
+
+
+ __BISCUITS_YES_BISCUITS__ 
+
+Artist: Backstreet Boys
+Song Name: I Want It That Way
+Preview link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=41b20b50d7e94c738ae63c71b3c5cb5b
+album: The Hits--Chapter One
+
+ end.. 
+
+User Command: movie-this Star Wars
+
+ LIRI Response:
+
+
+ __BISCUITS_YES_BISCUITS__ 
+
+Title: Star Wars: Episode IV - A New Hope
+Year: 1977
+IMDB Rating: 8.6
+Rotten Tomatoes Rating: 93%
+Country: USA
+Language: English
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+
+ end.. 
+
+User Command: spotify-this-song Every New Day
+
+ LIRI Response:
+
+ __BISCUITS_YES_BISCUITS__ 
+
+Artist: From Ashes to New
+Song Name: Every Second
+Preview link: https://p.scdn.co/mp3-preview/0a4f41e83e60f8e165a9416ceb86ba2cac281ed3?cid=41b20b50d7e94c738ae63c71b3c5cb5b
+album: Day One (Deluxe)
+
+ end.. 
+
+User Command: concert-this Deep Purple
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Deep Purple
+Venue: Berghalle Heroldstatt
+Venue Location: Heroldstatt
+Event Date: 2019-02-09T20:00:00
+
+ end.. 
+
+User Command: movie-this Star Wars
+
+ LIRI Response:
+
+ __BISCUITS_YES_BISCUITS__ 
+
+Title: Star Wars: Episode IV - A New Hope
+Year: 1977
+IMDB Rating: 8.6
+Rotten Tomatoes Rating: 93%
+Country: USA
+Language: English
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+
+ end.. 
+
+User Command: concert-this Deep Purple
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Deep Purple
+Venue: Berghalle Heroldstatt
+Venue Location: Heroldstatt
+Event Date: 2019-02-09T20:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: Fillmore Detroit
+Venue Location: Detroit
+Event Date: 2018-12-07T20:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: Aragon Ballroom
+Venue Location: Chicago
+Event Date: 2018-12-08T19:00:21
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: EXPRESS LIVE!
+Venue Location: Columbus
+Event Date: 2018-12-09T18:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: Main Street Armory
+Venue Location: Rochester
+Event Date: 2018-12-10T20:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: The Fillmore Philadelphia
+Venue Location: Philadelphia
+Event Date: 2018-12-12T20:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: The Fillmore Philadelphia
+Venue Location: Philadelphia
+Event Date: 2018-12-13T20:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: Brooklyn Steel
+Venue Location: Brooklyn
+Event Date: 2018-12-14T20:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: Brooklyn Steel
+Venue Location: Brooklyn
+Event Date: 2018-12-15T20:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: Champagne Jam @ Asbury Park Convention Hall
+Venue Location: Asbury Park
+Event Date: 2018-12-16T17:00:00
+
+ end.. 
+
+User Command: concert-this Manchester Orchestra
+
+ LIRI Response:
+
+ ____VM____ 
+
+Artist: Manchester Orchestra
+Venue: Tsongas Center
+Venue Location: Lowell
+Event Date: 2018-12-18T20:00:00
+
+ end.. 
+
+User Command: spotify-this-song Every New Day
+
+ LIRI Response:
+
+ __BISCUITS_YES_BISCUITS__ 
+
+Artist: From Ashes to New
+Song Name: Every Second
+Preview link: https://p.scdn.co/mp3-preview/0a4f41e83e60f8e165a9416ceb86ba2cac281ed3?cid=41b20b50d7e94c738ae63c71b3c5cb5b
+album: Day One (Deluxe)
+
+ end.. 
+
