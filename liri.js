@@ -66,7 +66,30 @@ const getSong = function(input){
 //information about the movie in terminal
 const getMovie = function(input){
     
+    if(!input){
+        input = "Mr.Nobody";
+    }
+    //API Call
+    let queryUrl = (`http://www.omdbapi.com/?t=${input}&plot=short&apikey=trilogy`);
 
+    request(queryUrl, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+           //th console.log(body);
+        
+            var parsedData = JSON.parse(body);
+        
+            console.log('\r\n __BISCUITS_YES_BISCUITS__ \r\n\n' 
+            + 'Title: ' + parsedData.Title + '\r\n' 
+            + 'Year: ' + parsedData.Year + '\r\n'
+            + 'IMDB Rating: ' + parsedData.imdbRating + '\r\n' 
+            + 'Rotten Tomatoes Rating: ' + parsedData.Ratings[1].Value + '\r\n' 
+            + 'Country: ' + parsedData.Country + '\r\n'
+            + 'Language: ' + parsedData.Language + '\r\n'
+            + 'Plot: ' + parsedData.Plot + '\r\n'
+            + 'Actors: ' + parsedData.Actors + '\r\n\n end.. \r\n');
+        }
+    });
 
 }
 //do-what-it-says
