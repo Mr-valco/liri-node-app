@@ -47,7 +47,7 @@ const getSong = function(input){
     if(!input){
         input = "What's My Age Again"
     }
-
+console.log(input);
     spotify.search({type: 'track', query: input }, function (err, data) {
 
         if (err) {
@@ -99,9 +99,17 @@ const txtCommand = function(){
 
         if (error) {
             return console.log(error);
-        }
+        }else{
 
-        getSong(data);
+            // Split out the command name and the parameter name
+			var textString = data.split(',');
+			var command = textString[0].trim();
+            var param = textString[1].trim();
+            
+            if(command === 'spotify-this-song'){
+            getSong(param);
+            }
+        }
     });
 }
 
