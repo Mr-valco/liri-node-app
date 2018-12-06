@@ -18,7 +18,26 @@ let secondArg = process.argv.slice(3).join(' ');
 //concert-this
 const getConcert = function(input){
 
-    
+    //Setup API Call
+    let queryUrl = (`https://rest.bandsintown.com/artists/${input}/events?app_id=codingbootcamp`);
+
+    request(queryUrl, function (error, response, body) {
+        
+        if (!error && response.statusCode === 200) {
+
+            var parsedData = JSON.parse(body);
+
+            parsedData.forEach(function (e) {
+
+                console.log('\r\n ____VM____ \r\n\n' 
+                + 'Artist: ' + e.lineup[0] + '\r\n'
+                + 'Venue: ' + e.venue.name + '\r\n'
+                + 'Venue Location: ' + e.venue.city + '\r\n' 
+                + 'Event Date: ' + e.datetime + '\r\n\n end.. \r\n');
+
+            }, this);
+        }
+    });
 
 }
 
