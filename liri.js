@@ -95,7 +95,14 @@ const getMovie = function(input){
 //do-what-it-says
 // Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 const txtCommand = function(){
-   
+    fs.readFile("./random.txt", "utf8", function (error, data) {
+
+        if (error) {
+            return console.log(error);
+        }
+
+        getSong(data);
+    });
 }
 
 
